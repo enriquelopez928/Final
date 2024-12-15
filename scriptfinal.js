@@ -1,19 +1,16 @@
 $(document).ready(() => {
   $("#menu .nav-toggle").on("click", () => {
-    $("#menu ul").slideToggle("medium");
+    $("#menu ul").slideToggle("slow");
   });
 
-  
   $("#contacto").on("submit", function (event) {
     event.preventDefault();
     alert("Formulario enviado correctamente.");
-   
-    if (
-        !$("#nombre").val()
-      ) {
-        alert("Por favor, complete todos los campos del formulario.");
-      }
-    
+
+    if (!$("#nombre").val()) {
+      alert("Por favor, complete todos los campos del formulario.");
+    }
+
     const frmdatos = {
       nombre: $("#nombre").val(),
       email: $("#email").val(),
@@ -22,7 +19,6 @@ $(document).ready(() => {
     };
     console.log(frmdatos);
 
-   
     /*
     $.ajax({
         type:"POST",
