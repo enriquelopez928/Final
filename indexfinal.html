@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scr.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Portafolio</title>
+  </head>
+
+  <body>
+    <nav id="menu">
+      <div id="brand">
+        <a href="#">Leonardo López</a>
+      </div>
+      <i class="fa fa-bars nav-toggle" style="color: #181716;"></i>
+      <ul>
+        <li><a href="#presentacion">Sobre mi</a></li>
+        <li><a href="#conoceme">Acerca de mi </a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <main id="portada">
+      <section id="presentacion" class="container">
+        <img src="fotoCV1.jpg" />
+        <h1>Leonardo López</h1>
+        <span>Desarrollador Web</span>
+      </section>
+      <section id="conoceme" class="container">
+        <h1>Acerca de mi</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </section>
+      <section id="proyectos" class="container">
+        <h1>Proyectos</h1>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h2>Proyecto 1</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h2>Proyecto 2</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h2>Proyecto 3</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h2>Proyecto 4</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="portafolio" class="container">
+        <h1>Portafolio</h1>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img
+              src="https://imgs.search.brave.com/GeN1tJDx4dTNJusyfKhSHh1ldxA889VGfyi526ZBDus/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cHJveWVjdG9zdGku/bXgvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTcvMDQvc29wb3J0/ZS10ZWNuaWNvLXNl/cnZpY2lvLWRldGFs/bGFkby00ODB4MzE0/LmpwZw"
+              alt="Imagen"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://imgs.search.brave.com/sNQlyUnuA3AVG94podA47nAObAdUqQ3V_LbrubeGowI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMTlp/MWxjY25vejVhOS5j/bG91ZGZyb250Lm5l/dC9pbWcvYXJ0aWNs/ZS9jb21vLWhhY2Vy/LXVuLXByb3llY3Rv/LWRlLXRpLndlYnA"
+              alt="Imagen"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://imgs.search.brave.com/tNXvuWN71GqH2-v_xYXSWelsihv8FfjcN49VPiEOeu4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY29y/cC5jb20ubXgvd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/UHJveWVjdG9zLWRl/LVRJLWNvbi1zb3Bv/cnRlLWVuLWNhbXBv/LndlYnA"
+              alt="Imagen"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://imgs.search.brave.com/FPaNXs7OKDsxQ3P5EZesr4mh-afMb_Uj1p0tejg8iOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ByLmdvYi5teC9h/c3NldHMvaW1nL3Jh/ZGlvZGlmdXNpb24v/UExBTkVUQV9SYWRp/by5wbmc"
+              alt="Imagen"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contacto" class="container">
+        <form id="form-contacto" method="post" action="https://formspree.io/f/mjvovqod">
+          <h1>Contacto</h1>
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" id="nombre" placeholder="Nombre" />
+            </div>
+            <div class="grid-item">
+              <input type="email" id="email" placeholder="E-mail" />
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <input type="text" id="asunto" placeholder="Asunto" />
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="grid-item">
+              <textarea id="mensaje" name="message" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+          <div class="grid-item">
+            <input type="submit" id="enviar" ></input>
+          </div>
+        </form>
+      </section>
+    </main>
+   </body>
+   <footer>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </footer>
+    <script src="scriptfinal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+h2 {
+  font-weight: 900;
+  font-size: 1em;
+}
+p {
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:focus {
+  color: red;
+  text-decoration: none;
+}
+
+/* Clases compartidas */
+.container {
+  width: 100%;
+  padding: 5em 8em;
+  text-align: center;
+}
+
+/*flex Grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.grid-item {
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+}
+
+/*elementos especificos*/
+
+#menu {
+  padding: 1em 8m;
+  color: #fff;
+  box-shadow: 0 2px 2px rgb(161, 156, 156);
+  position: sticky;
+  top: 0;
+}
+
+#menu .nav-toggle {
+  float: right;
+  cursor: pointer;
+  font-size: 1.25em;
+  padding: 20px;
+}
+
+#menu #brand {
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 900;
+  padding: 20px;
+}
+
+#menu ul {
+  float: right;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+#menu ul li {
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+/*Seccion presentacion*/
+
+#presentacion {
+  background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(52, 152, 219, 0.65)),
+    url("") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#presentacion img {
+  max-width: 200px;
+}
+
+#presentacion span {
+  display: inline-block;
+  width: 100%;
+}
+
+#conoceme {
+  background-color: #f8f8f8;
+  padding-bottom: 2em;
+}
+
+/*seccion conoceme*/
+
+#conoceme {
+  background-color: red;
+  color: white;
+}
+
+/*proyectos*/
+
+/*portafolio*/
+#portafolio {
+  background-color: #4acae0;
+  color: white;
+}
+#portafolio .grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, autofit));
+}
+#portafolio .grid-item img {
+  max-width: 100%;
+}
+#portafolio .grid-item {
+  border: solid 2px rgb(30, 119, 183);
+  text-align: center;
+  padding: 0;
+}
+
+/*Contacto*/
+
+#contacto {
+  border-top: solid red 8px;
+  background-color: rgb(206, 199, 201);
+  padding: 3%;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+  padding: 2em;
+  display: inline-block;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+#contacto textarea {
+  height: 200px;
+  color: black;
+  font-style: italic;
+}
+
+#contacto input[type="submit"] {
+  background-color: rgb(20, 118, 210);
+  color: white;
+  padding: 2em;
+  width: 100%;
+  border-radius: 5px;
+  border: solid #ccc;
+  cursor: pointer;
+}
+
+.grid-container.one-column {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
+/*footer*/
+footer {
+  background-color: rgb(197, 195, 195);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(60, 204, 41);
+}
+
+/*Responsive*/
+@media (max-width: 500px) {
+  .container {
+    padding: 10% 3%;
+  }
+
+  #menu {
+    padding: 10% 3%;
+  }
+}
+
+@media (min-width: 980px) {
+  #menu .nav-toggle {
+    display: none;
+  }
+}
+@media (max-width: 979px) {
+  #menu .nav-toggle {
+    display: block;
+  }
+  #menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+
+  #menu ul li {
+    margin-right: 0.5em;
+    display: inline-block;
+    width: 100%;
+    padding: 1em 8em;
+    background-color: #fff;
+    border-bottom: solid 1px #ccc;
+  }
+}
